@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//G16B0398
+//Used https://www.w3resource.com/euler-project/euler-problem2.php as guide
+
 
 namespace Euler
 {
