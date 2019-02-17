@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//G16B0398
+//G16B0398 - Sivesha
 //Used https://www.w3resource.com/euler-project/euler-problem2.php as guide
-//G17D1728 - Used https://www.geeksforgeeks.org/find-largest-prime-factor-number/ as a guide
+//G17D1728 (Ammaarah) - Used https://www.geeksforgeeks.org/find-largest-prime-factor-number/ as a guide
 
 
 namespace Euler
@@ -14,7 +14,18 @@ namespace Euler
     {
         static void Main(string[] args)
         {
-
+            //Multiples of 3 & 5 problem - Minali
+            int sum = 0;
+            for (int i = 0; i < 1000; i++)
+            {
+                if (i % 3 == 0 || i % 5 == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+            Console.WriteLine("Multiples of 3 & 5 problem: The sum is " + sum);
+        
+            //Fibonacci Numbers Problem Sivesha - Sivesha
             int x1 = 0; //first number
             int x2 = 1;// second number
             int result = 0; // total of addition
@@ -35,9 +46,11 @@ namespace Euler
 
 
             }
-            Console.WriteLine("The sum is " + Sum);
+
+            Console.WriteLine("Fibonacci Problem: The sum is " + Sum);
             System.Threading.Thread.Sleep(5000);
 
+            //Largest Prime Factor Problem - Ammaarah 
             long number = 600851475143;
             long largestfactor = 0; // stores largest prime factor
             while (number % 2 == 0) //if number is divided by 2 and mod is 0 - not prime
@@ -57,9 +70,8 @@ namespace Euler
             {
                 largestfactor = number;
             }
-            Console.WriteLine($"Problem 3: The largest prime factor of the number 600851475143 is {largestfactor}");
+            Console.WriteLine($"Largest Prime Factor Problem: The largest prime factor of the number 600851475143 is {largestfactor}");
             Console.ReadLine();
-
         }
         }
         }
